@@ -263,13 +263,14 @@ bassoonRoyal = \relative c' {
 	\time 6/8
 	ees->\moltoFF[ des-.\> c-. bes-.\p aes-. ges-.] 	\mark \default		% Rehearsal No. 14
 	\time 2/4
-	R2 |
-	R2 |
+	\grace {s16 s s s s} R2 |
+	\grace {s16 s s s s} R2 |
 	R2 |
 	R2 |
 	\time 3/8
 	R1 * 3/8 |							\mark \default		% Rehearsal No. 15
 	\clef tenor
+	\time 2/4
 	r8 g'-.\p[ g-. g-.] |
 	r8 g-.[ g-.] r8 |
 	\time 5/8

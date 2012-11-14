@@ -146,6 +146,65 @@ violinMarch = \relative c' {
 	<<a' e g,-.>> r4 \bar ".|"
 }
 
-violinRoyal = \relative c' { 
+violinRoyal = { 
 	\tempo 4 = 112
+	\time 5/8
+	<< d'8-|\downbow bes' bes'' >> r8 <<d'8-|\downbow bes' bes''>> r8 <<d'8-|\downbow bes' bes''>> |
+	\time 2/4
+	r8 <<d'8-|\downbow bes' bes''>> r8 <<d'8-|\downbow bes' bes''>> |
+	r8 <<d'8-|\downbow bes' bes''>> r8 <<d'8-|\downbow bes' bes''>> |
+	r8 <<d'8-|\downbow bes' bes''>> r8 <<d'8-|\downbow bes' bes''>> |
+	r8 <<d'8-|\downbow bes' bes''>> r8 <<d'8-|\downbow bes' bes''>> |
+	r8 <<d'8-|\downbow bes' bes''>> r8 <<d'8-|\downbow bes' bes''>> |
+	r8 <<d'8-|\downbow bes' bes''>> r8 <<d'8-|\downbow bes' bes''>> |
+	r8 <<d'8-|\downbow bes' bes''>> r8 <<d'8-|\downbow bes' bes''>> |
+	\time 5/8
+	r8 <<d'8-|\downbow bes' bes''>> r8 <<d'8-|\downbow bes' bes''>> r8 |				\mark \default		% Rehearsal No. 1
+	<<d'8-|\downbow bes' bes''>> <<bes-\markup{\dynamic sf "secco"} d'-|>> <<bes d'-|>> <<bes d'-|>> r8 |
+	\time 2/4
+	<<bes d'-|>> r8 r8 <<bes d'-|[>>
+	<<bes d'-|>> <<bes d'-|]>> r8 <<bes d'-|>> |
+	r4 <<bes8 d'-|[>> <<bes d'-|>> |
+	<<bes d'-|]>> r8 <<bes d'-|>> r8 |													\mark \default		% Rehearsal No. 2
+	r8 <<bes^\markup{"pizz."} d'-|[>> <<bes d'-|>> <<bes d'-|]>> |
+	r8 <<bes d'-|[>> <<bes d'-|>> <<bes d'-|]>> |
+	\time 5/8
+	r8 <<bes d'-|[>> <<bes d'-|>> <<bes d'-|]>> r8 |
+	\time 3/4
+	<<bes d'-|[>> <<bes d'-|>> <<bes d'-|]>> r8 <<bes d'-|[>> <<bes d'-|>> |
+	\time 5/8
+	<<bes d'-|]>> r8 <<bes d'-|[>> <<bes d'-|>> <<bes d'-|]>> |
+	\time 3/4
+	r8 <<bes d'-|[>> <<c' e'-|>> <<c' e'-|]>> <<c' e'-|[>> <<c' e'-|>> |
+	\time 2/4
+	<<c' ees'-|]>> r8 <<c' e'-|[>> <<c' e'-|]>>											\mark \default		% Rehearsal No. 3
+	r8 cis'[ r8 d'] |
+	r8 g\p f'4 |
+	\time 3/4
+	R2. |
+	\time 2/4
+	r4 r8 c'16^\markup{"arco"}(\sff aes) |												\mark \default		% Rehearsal No. 4
+	r8 <<d'8-| bes' f''>> <<bes-|-\markup{\dynamic f "secco"} d'[>> <<bes-| d'>> |
+	<<bes-| d']>> r8 <<bes-| d'>> r8 |
+	r8 <<bes-| d'[>> <<bes-| d'>> <<bes-| d']>> |
+	r8 <<bes-| d'>> r4 |
+	<<bes8-| d'[>> <<bes-| d'>> <<bes-| d']>> r8											\mark \default		% Rehearsal No. 5
+	\time 3/4
+	<<bes d'-|>> r8 r8  bes'4.\sf^\markup{"pizz."}\laissezVibrer |
+	\time 2/4
+	R2 |
+	R2 |
+	r8 bes'4.\laissezVibrer |
+	r8 bes'4.\laissezVibrer |
+	R2 |
+	r4 r8 ees'8 |
+	d''[ c'' bes' aes']																	\mark \default		% Rehearsal No. 6
+	r8 aes\mf[ r8 bes] |
+	r8 aes\mf[ r8 bes] |
+	\time 3/4
+	r8 aes-.[ r8 bes-. r8 aes-.] |
+	\time 3/8
+	d'4\f r8 |																			\mark \default		% Rehearsal No. 7
+	\time 2/4
+	
 }

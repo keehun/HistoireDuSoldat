@@ -189,7 +189,6 @@ clarinetRoyal = \relative b' {
 	\time 2/4 % Marked (4/8)
 	R2 |
 	R2 |
-	\override Hairpin #'to-barline = ##f
 	r4 r8^\markup{"Solo"} \acciaccatura{ e''16[ g16]} f16^>-\p_\>( e~ |
 	e4.)\! \acciaccatura {g8} f^>\>~ |											%% FIX!!!
 	f4.\!  \acciaccatura {g8}  f^>\>~ |
@@ -262,8 +261,8 @@ clarinetRoyal = \relative b' {
 	\time 6/8
 	a16\>[ d,16 a'8] a16 [d,16 a'8\!] r8 r8 | \mark \default	% Rehearsal No. 14
 	\time 2/4
-	R2 |
-	R2 |
+	\grace {s16 s s s s} R2 |
+	\grace {s16 s s s s} R2 |
 	\times 4/6 {g16(\f b d g b d)} g8-> g16( d16) |
 	g8 r8 \times 4/6 {g,,16( b d g b d}
 	\time 3/8

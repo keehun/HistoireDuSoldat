@@ -117,7 +117,7 @@ tromboneMarch = \relative c {
 	r4 c,,8-\mp r8 |
 	R2 * 3 |						\mark \default			% Rehearsal No. 15
 	R2 * 3 |
-	c8-.-\p r8 r4 \bar ".|"
+	c8-.-\p r8 r4 \bar "|."
 }
 
 tromboneRoyal = \relative c { 
@@ -136,12 +136,8 @@ tromboneRoyal = \relative c {
 	g[ f e-\markup{"molto"} d c\!] |	\mark \default		% Rehearsal No. 1
 	bes8-| r8 r4. |
 	\time 2/4
-	R2 |
-	R2 |
-	R2 |
-	R2 |							\mark \default		% Rehearsal No. 2
-	R2 |
-	R2 |
+	R2 *4 |							\mark \default		% Rehearsal No. 2
+	R2 *2 |
 	\time 5/8
 	R1 * 5/8 |
 	\time 3/4
@@ -152,17 +148,13 @@ tromboneRoyal = \relative c {
 	r4 r8 f'8[ g a] |
 	\time 2/4
 	bes4 c8~ c16 r16 |				\mark \default		% Rehearsal No. 3
-	R2 |
-	R2 |
+	R2 * 2 |
 	\time 3/4
 	R2. |
 	\time 2/4
 	R2 |							\mark \default		% Rehearsal No. 4
 	r8 bes,-.-\pocoSF r4 |
-	R2 |
-	R2 |
-	R2 |
-	R2 |							\mark \default		% Rehearsal No. 5
+	R2 * 4 |							\mark \default		% Rehearsal No. 5
 	\time 3/4
 	r4 r8 e(\p[\< fis gis)\!] |
 	\time 2/4
@@ -173,26 +165,16 @@ tromboneRoyal = \relative c {
 	dis4--\< e-- |
 	f8\>([ ees d)\!] r8 |
 	r8 des-.[ c-. b-.] |			\mark \default		% Rehearsal No. 6
-	R2 |
-	R2 |
+	R2 * 2 |
 	\time 3/4
 	R2. |
 	\time 3/8
 	r8 r8 c,,16-. r16 |				\mark \default		% Rehearsal No. 7
 	\time 2/4
-	R2 |
-	R2 |
-	R2 |
-	R2 |
-	R2 |
-	R2 |
-	R2 |
+	R2 * 7 |
 	r4 r8 d'8-.\sf^\markup{\italic "staccatissimo"} |	\mark \default		% Rehearsal No. 8
 	g8-. r8 r4 |
-	R2 |
-	R2 |
-	R2 |
-	R2 |
+	R2 * 4 |
 	\time 3/8
 	R4. |
 	\time 2/4
@@ -208,17 +190,13 @@ tromboneRoyal = \relative c {
 	\time 2/4
 	R2 |
 	\time 3/4
-	R2. |
-	R2. |
-	R2. |
-	R2. |												\mark \default		% Rehearsal No. 10
+	R2. * 4 |												\mark \default		% Rehearsal No. 10
 	r4 r8 bes8-|\f[ r8 bes-|] |
 	r8 bes8-|[ r8 bes-| r8 bes-|] |
 	r8 bes8-|[ r8 bes-| r8 bes-|]
 	r8 bes8-|[ r8 bes-|] r4 |
 	\time 2/4
-	R2 |
-	R2 |												\mark \default		% Rehearsal No. 11
+	R2 * 2 |												\mark \default		% Rehearsal No. 11
 	\time 5/8
 	r8 aes8-.\mf[ r aes'-.] r |
 	\time 2/4
@@ -233,8 +211,7 @@ tromboneRoyal = \relative c {
 	r8 f,-.[ r f'-.] r8 |
 	\time 2/4
 	e,-.[ r e'-.] r8 |									\mark \default		% Rehearsal No. 12
-	R2 |
-	R2 |
+	R2 * 2 |
 	\time 5/8
 	R1 * 5/8 |
 	\time 4/8
@@ -254,10 +231,10 @@ tromboneRoyal = \relative c {
 	\time 6/8
 	ees8\f\>[ des c bes\!] r8 r8 |						\mark \default		% Rehearsal No. 14
 	\time 2/4
-	r8 f'16->\f f-. f4-> |
-	r8 f16-> f-. f4-> |
-	\times 4/6 {b,16 c des d ees e} f8[ r16 c16] |
-	f8 f8 \times 4/6 {b16 c des d ees e} |
+	\grace {s16 s s s s} r8 f'16->\f f-. f4-> |
+	\grace {s16 s s s s} r8 f16-> f-. f4-> |
+	\times 4/6 {b,16( c des_\markup{"gliss."} d ees e)} f8[ r16 c16] |
+	f8 f8 \times 4/6 {b16( c des_\markup{"gliss."} d ees e)} |
 	\time 3/8
 	f16[ f16 f8 f]  |									\mark \default		% Rehearsal No. 15
 	\time 2/4
@@ -280,15 +257,11 @@ tromboneRoyal = \relative c {
 	g[ f e d c] |
 	\time 2/4
 	bes r8 r4 |
-	R2 |
-	R2 |
-	R2 |
-	R2 |												\mark \default		% Rehearsal No. 17
+	R2 * 4 |												\mark \default		% Rehearsal No. 17
 	\time 5/8
 	R1 * 5/8
 	\time 2/4
-	R2 |
-	R2 |
+	R2 * 2 |
 	r4 r8 ees8\mf^\markup{"Solo"}[ |
 	\time 3/8
 	f( a) g]
@@ -300,13 +273,8 @@ tromboneRoyal = \relative c {
 	\time 3/4
 	bes8\pp r8 r4 r4 |
 	\time 2/4
-	R2 |
-	R2 |
-	R2 |
-	R2 |
-	R2 |												\mark \default		% Rehearsal No. 19
-	R2 |
-	R2 |
+	R2 * 5 |												\mark \default		% Rehearsal No. 19
+	R2 * 2 |
 	\time 3/4
 	R2. |
 	r4 r8 c'16\f-> aes-> f8-> r8 |						\mark \default		% Rehearsal No. 20
@@ -322,5 +290,5 @@ tromboneRoyal = \relative c {
 	d[ c16 c16 b8 a] |
 	\time 5/8
 	g[-> f e-> d c] |
-	bes-> r8 r4. |
+	bes-> r8 r4. \bar "|."
 }

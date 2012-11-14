@@ -12,8 +12,9 @@
 #(set-global-staff-size 18)
 
 \paper {
-	system-system-spacing #'basic-distance = #17
-	between-system-padding = #5
+	system-system-spacing #'basic-distance = #20
+	between-system-padding = #20
+	score-system-spacing = #30
 	
 % 	system-separator-markup = \slashSeparator
 	indent = 3\cm
@@ -52,11 +53,41 @@
 						\time 2/4
 
 						\transpose c c \tromboneMarch
+						
+						\pageBreak
 					}
 				}
 		>>
 		\header {
 			piece = "The Soldier's March"
 		}
+	}
+	
+	<<
+			\new Staff = "trombone" {
+				\relative c' {
+
+					\override Score.BarNumber #'break-visibility = #'#(#f #t #t)
+					\set Score.barNumberVisibility = #(every-nth-bar-number-visible 1)
+					\set Score.markFormatter  = #format-mark-circle-numbers
+					\set Staff.instrumentName = \markup \right-column {"Trombono"}
+% 						\set Staff.shortInstrumentName = #"Cb."
+					\set Staff.midiInstrument = #"trombone"
+					#(set-accidental-style 'modern-cautionary)
+
+					\transposition c
+
+					\compressFullBarRests
+
+					\clef bass
+					\key g \minor
+					\time 5/8
+
+					\transpose c c \tromboneRoyal
+				}
+			}
+	>>
+	\header {
+		piece = "The Royal March"
 	}
 }

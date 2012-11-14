@@ -186,8 +186,7 @@ trumpetRoyal = \relative c' {
 	c8[ b( c) d-.]
 	e16\(( f) g8~ g8\) f-.^\markup{\italic "leggierissimo"} |
 	e8-.[ \times 2/3 {d16\(( e d)]} c8-.\)[ \times 2/3 {bes16( c bes)]} |				\mark \default		% Rehearsal No. 6
-	R2 |
-	R2 |
+	R2 * 2 |
 	\time 3/4
 	R2. |
 	\time 3/8
@@ -196,13 +195,10 @@ trumpetRoyal = \relative c' {
 	r4 r8 \acciaccatura{e8^\markup{"Solo"}} f8\p |
 	r8 \acciaccatura{e8} f8 r8 \acciaccatura{e8} f8 |
 	\times 4/6 {e16( f e cis b c)} a8 r8 |
-	R2 |
-	R2 |
-	R2 |
+	R2 * 3 |
 	r4 \times 4/6 {e'16( fis gis fis e cis)} |
 	\times 2/3 {b16->( cis b} a8) r4 |													\mark \default		% Rehearsal No. 8
-	R2 |
-	R2 |
+	R2 * 2 |
 	r8 d-.[ fis-. a-.] |
 	\times 4/5 {a16( gis e) e gis(} e4) |
 	R2 |
@@ -221,10 +217,7 @@ trumpetRoyal = \relative c' {
 	\time 2/4
 	R2 |
 	\time 3/4
-	R2. |
-	R2. |
-	R2. |
-	R2. |																				\mark \default		% Rehearsal No. 10
+	R2. * 4 |																				\mark \default		% Rehearsal No. 10
 	r4 r8 g\f[ g fis] |
 	\times 2/3 {fis16\(( g fis)} e8-.\) r8 g\f[ g fis] |
 	\times 2/3 {fis16\(( g fis)} e8-.\) r8 g\f[ g fis] |
@@ -265,10 +258,10 @@ trumpetRoyal = \relative c' {
 	\time 3/4
 	r8 dis16( b) cis16-.[ b-. a-. b-.] cis8-. r8 |
 	\time 6/8
-	fis,16\f\>[ fis16 fis8 fis16 fis16 fis8] r8 r8 |										\mark \default		% Rehearsal No. 14
+	fis,16\f\>[ fis16 fis8 fis16 fis16 fis8] r8 r8 |									\mark \default		% Rehearsal No. 14
 	\time 2/4
-	r8 g'16\f-> g16-. g4-> |
-	r8 g16\f-> d16-. g4-> |
+	\grace {s16 s s s s} r8 g'16\f-> g16-. g4-> |
+	\grace {s16 s s s s} r8 g16\f-> d16-. g4-> |
 	\times 4/5 {g16( d) b b( d)} g8 g16( d) |
 	g8^\markup{"Solo"} g g16( d b) d-. |
 	\time 3/8
@@ -300,9 +293,7 @@ trumpetRoyal = \relative c' {
 	\time 5/8
 	c8~ c16 r16 r8 r4 |
 	\time 2/4
-	R2 |
-	R2 |
-	R2 |
+	R2 * 3 |
 	\time 3/8
 	b16-.([\mf b16-.) r8 b16-.( b16-.)] |
 	\time 2/4
@@ -321,8 +312,7 @@ trumpetRoyal = \relative c' {
 	R2 |
 	r8 g,16\p d16 g8-. r8 |
 	\time 3/4
-	R2. |
-	R2. |																				\mark \default		% Rehearsal No. 20
+	R2. * 2|																				\mark \default		% Rehearsal No. 20
 	\time 5/8
 	c8-.\sf[ r c-. r c-.] |
 	\time 2/4

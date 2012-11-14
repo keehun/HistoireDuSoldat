@@ -59,4 +59,34 @@
 			piece = "The Soldier's March"
 		}
 	}
+	
+	\score {
+		<<
+				\new Staff = "trumpet" {
+					\relative c' {
+
+						\override Score.BarNumber #'break-visibility = #'#(#f #t #t)
+						\set Score.barNumberVisibility = #(every-nth-bar-number-visible 1)
+						\set Score.markFormatter  = #format-mark-circle-numbers
+						\set Staff.instrumentName = \markup \right-column {"Cornet à pistons in Si" \flat}
+% 						\set Staff.shortInstrumentName = #"Cb."
+						\set Staff.midiInstrument = #"trumpet"
+						#(set-accidental-style 'modern-cautionary)
+
+						\transposition c
+						
+						\compressFullBarRests
+
+						\clef treble
+						\key a \minor
+						\time 2/4
+
+						\transpose c c \trumpetRoyal
+					}
+				}
+		>>
+		\header {
+			piece = "The Soldier's March"
+		}
+	}
 }

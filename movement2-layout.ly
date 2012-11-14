@@ -4,6 +4,7 @@
 		\relative a' {
 		
 			\override Score.BarNumber #'break-visibility = #'#(#f #t #t)
+			\override Hairpin #'to-barline = ##f
 			\set Score.barNumberVisibility = #(every-nth-bar-number-visible 1)
 			\set Score.markFormatter  = #format-mark-circle-numbers
 			\set Staff.instrumentName = \markup \right-column {\line {"Clarinetto in Si" \flat}}
@@ -27,6 +28,7 @@
 		\relative c {
 		
 			\override Score.BarNumber #'break-visibility = #'#(#f #t #t)
+			\override Hairpin #'to-barline = ##f
 			\set Score.barNumberVisibility = #(every-nth-bar-number-visible 1)
 			\set Score.markFormatter  = #format-mark-circle-numbers
 			\set Staff.instrumentName = \markup \right-column {"Fagotto"}
@@ -52,6 +54,7 @@
 		\relative a' {
 		
 			\override Score.BarNumber #'break-visibility = #'#(#f #t #t)
+			\override Hairpin #'to-barline = ##f
 			\set Score.barNumberVisibility = #(every-nth-bar-number-visible 1)
 			\set Score.markFormatter  = #format-mark-circle-numbers
 			\set Staff.instrumentName = \markup \right-column { \line{"Cornet à pistons in Si" \flat}}
@@ -74,6 +77,7 @@
 		\relative c {
 		
 			\override Score.BarNumber #'break-visibility = #'#(#f #t #t)
+			\override Hairpin #'to-barline = ##f
 			\set Score.barNumberVisibility = #(every-nth-bar-number-visible 1)
 			\set Score.markFormatter  = #format-mark-circle-numbers
 			\set Staff.instrumentName = \markup \right-column {"Trombono"}
@@ -98,6 +102,7 @@
 		\relative c {
 		
 			\override Score.BarNumber #'break-visibility = #'#(#f #t #t)
+			\override Hairpin #'to-barline = ##f
 			\set Score.barNumberVisibility = #(every-nth-bar-number-visible 1)
 			\set Score.markFormatter  = #format-mark-circle-numbers
 			\set Staff.instrumentName = \markup \right-column {"Batterie"}
@@ -121,6 +126,7 @@
 			\relative c' {
 
 				\override Score.BarNumber #'break-visibility = #'#(#f #t #t)
+				\override Hairpin #'to-barline = ##f
 				\set Score.barNumberVisibility = #(every-nth-bar-number-visible 1)
 				\set Score.markFormatter  = #format-mark-circle-numbers
 				\set Staff.instrumentName = \markup \right-column {"Violino"}
@@ -142,6 +148,7 @@
 			\relative c {
 
 				\override Score.BarNumber #'break-visibility = #'#(#f #t #t)
+				\override Hairpin #'to-barline = ##f
 				\set Score.barNumberVisibility = #(every-nth-bar-number-visible 1)
 				\set Score.markFormatter  = #format-mark-circle-numbers
 				\set Staff.instrumentName = \markup \right-column {"Contrabasso"}

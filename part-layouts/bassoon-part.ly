@@ -12,8 +12,9 @@
 #(set-global-staff-size 18)
 
 \paper {
-	system-system-spacing #'basic-distance = #17
-	between-system-padding = #5
+	system-system-spacing #'basic-distance = #20
+	between-system-padding = #20
+	score-system-spacing = #30
 	
 % 	system-separator-markup = \slashSeparator
 	indent = 3\cm
@@ -57,6 +58,36 @@
 		>>
 		\header {
 			piece = "The Soldier's March"
+		}
+	}
+	
+	\score {
+		<<
+				\new Staff = "bassoon" {
+					\relative c {
+
+						\override Score.BarNumber #'break-visibility = #'#(#f #t #t)
+						\set Score.barNumberVisibility = #(every-nth-bar-number-visible 1)
+						\set Score.markFormatter  = #format-mark-circle-numbers
+						\set Staff.instrumentName = \markup \right-column {"Fagotto"}
+% 						\set Staff.shortInstrumentName = #"Cb."
+						\set Staff.midiInstrument = #"bassoon"
+						#(set-accidental-style 'modern-cautionary)
+
+						\compressFullBarRests
+
+						\transposition c
+
+						\clef bass
+						\key g \minor
+						\time 5/8
+
+						\transpose c c \bassoonRoyal
+					}
+				}
+		>>
+		\header {
+			piece = "The Royal March"
 		}
 	}
 }
