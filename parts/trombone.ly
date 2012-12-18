@@ -273,7 +273,7 @@ tromboneRoyal = \relative c {
 	\time 3/4
 	bes8\pp r8 r4 r4 |
 	\time 2/4
-	R2 * 5 |												\mark \default		% Rehearsal No. 19
+	\acciaccatura {s8} R2 * 5 |												\mark \default		% Rehearsal No. 19
 	R2 * 2 |
 	\time 3/4
 	R2. |

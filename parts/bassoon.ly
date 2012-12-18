@@ -211,7 +211,7 @@ bassoonRoyal = \relative c' {
 	\time 2/4
 	R2 |								\mark \default		% Rehearsal No. 9
 	\time 3/4
-	r4 \clef bass r8^\markup{"Solo"} b,,\mf[ d f] |
+	r4 \clef bass r8^\markup{"Solo"} bes,,\mf[ d f] |
 	\time 3/8
 	\times 2/3 {c16(\([ e cis)} a8]\) r8 |
 	\time 2/4
@@ -310,7 +310,7 @@ bassoonRoyal = \relative c' {
 	\time 3/4
 	d8-.]) r8 d-. r8 e8-.( e-.) |
 	\time 2/4
-	r8 d8-.( d8-.) r8 |
+	\grace {s8} r8 d8-.( d8-.) r8 |
 	e8-. (e-.) r4 |
 	r4 r8 e8-.( |
 	e8-.) r8 ees-.( ees-.) |

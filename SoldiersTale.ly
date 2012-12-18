@@ -46,13 +46,13 @@
 \include "parts/contrabass.ly"
 
 \book {
-% 	\score {
-% 		\include "movement1-layout.ly"
-% 		\header {
-% 			piece = "The Soldier's March"
-% 		}
-% 	}
-% 	
+	\score {
+		\include "movement1-layout.ly"
+		\header {
+			piece = "The Soldier's March"
+		}
+	}
+	
 	\score {
 		\include "movement2-layout.ly"
 		\header {

@@ -393,7 +393,7 @@ percussionRoyal = {
 	\time 3/4
 	c'] f[ c'] f[ c' c'] |
 	\time 2/4
-	R2 * 5|													\mark \default		% Rehearsal No. 19
+	\acciaccatura {s8} R2 * 5|													\mark \default		% Rehearsal No. 19
 	R2 |
 	f8^\Lh\p f8^\Rh[ c'8^\Rh] r8 |
 	\time 3/4

@@ -307,8 +307,8 @@ clarinetRoyal = \relative b' {
 	\time 3/4
 	bes8-.)] r8 bes-. r8 \acciaccatura {c8} bes16([ a16 bes8-.)] |
 	\time 2/4
-	r8 bes16[ a bes8-.] r8 |
-	\acciaccatura {c8} bes16([ a16 b8-.)] r4 |
+	\grace {s8} r8 bes16[ a bes8-.] r8 |
+	\acciaccatura {c8} bes16([ a16 bes8-.)] r4 |
 	r4 r8 b16[( a16 |
 	b8-.)] r8 \acciaccatura {c8} b16([ a16 b8-.)] |
 	r4 aes16[( g16) aes8-.] |		\mark \default		% Rehearsal No. 19

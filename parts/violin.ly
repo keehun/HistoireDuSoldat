@@ -2,6 +2,8 @@
 pocosf = #(make-attr-dynamic-script "poco" "sf" "")
 pocof = #(make-attr-dynamic-script "poco" "f" "")
 subp = #(make-attr-dynamic-script "sub." "p" "")
+subFF = #(make-attr-dynamic-script "sub." "ff" "")
+sempreSeccoSF = #(make-attr-dynamic-script "sempre secco" "sf" "")
 
 violinMarch = \relative c' { 
 	\tempo 4 = 112
@@ -206,5 +208,139 @@ violinRoyal = {
 	\time 3/8
 	d'4\f r8 |																			\mark \default		% Rehearsal No. 7
 	\time 2/4
-	
+	r8 <<e''\subp f''[>> r8 <<e'' f'']>> |
+	r8 <<e'' f''[>> r8 <<e'' f'']>> |
+	r8 <<e'' f''[>> r8 <<e'' f'']>> |
+	r8 <<e'' f''[>> r8 <<e'' f'']>> |
+	r8 <<e'' f''[>> r8 <<e'' f'']>> |
+	r8 <<e'' f''[>> r8 <<e'' f'']>> |
+	r8 <<e'' f'' >> r8 a\<^\markup{"arco"}[ |
+	<<g16-|\!\sf] d'>> r16 r8 r4 |														\mark \default		% Rehearsal No. 8
+	r4 \times 4/7 {g'16\f\downbow^\markup{"jeté"}-.[( a'-. b'-. c''-. d''-. e''-. f''-.]} |
+	g''-.) r16 r8 r8 <<d'\sf^\markup{"pizz."} d'>> |
+	R2 * 2 |
+	r8 g'16-|^\markup{"arco"}\f\< a'16-| bes'8-| c''8-|\! |
+	\time 3/8
+	d''16_\markup{"molto"}-| e''16-| f''8-| r8 |
+	\time 2/4
+	<<a4\sf a'-\markup{"pizz."}>> r8 e'16-.-\markup{\dynamic ff "grand détaché"}^\markup{"arco"} a'16-. |
+	\time 3/4
+	cis''8-. a'16-. e'16-. a'8-. g'16-. e'16-. a'8-. g'16-. e'16-. |
+	\time 2/4
+	g'8-. f'16-. d'16-. fis'8-. e'16-.-> c'16-.-> |										\mark \default		% Rehearsal No. 9
+	\time 3/4
+	a8-.-> r8 r4 r4 |
+	\time 3/8
+	R1 * 3/8 |
+	\time 2/4
+	R2 |
+	\time 3/4
+	R2. * 4 |																			\mark \default		% Rehearsal No. 10
+	r4 r8 <<d'\ff^\markup{"arco"} bes' f''[ >> r8 <<d' bes' f''] >> |
+	r8 <<d' bes' f'' [>> r8 <<d' bes' f'' >> r8 <<d' bes' f'' ]>> |
+	r8 <<d' bes' f'' [>> r8 <<d' bes' f'' >> r8 <<d' bes' f'' ]>> |
+	r8 <<d' bes' f'' [>> r8 <<d' bes' f'' ]>> r8 <<bes-|\f^\markup{"secco"} d'>> |
+	\time 2/4
+	r4 <<bes8-| d' [>> <<bes-| d'>> |
+	<<bes-| d']>> r8 <<bes-| d'>> r8 |													\mark \default		% Rehearsal No. 11
+	\time 5/8
+	R1 * 5/8
+	\time 2/4
+	R2 * 3 |
+	\time 3/8
+	R4. |
+	\time 2/4
+	R2 |
+	\time 5/8
+	R1 * 5/8 |
+	\time 2/4
+	r4 r8 c'-|_\sempreSeccoSF\upbow |										\mark \default		% Rehearsal No. 12
+	r8 c'-|\upbow r8 c'-|\upbow |
+	r8 c'-|\upbow r8 c'-|\upbow |
+	\time 5/8
+	r8 c'-|\upbow r8 c'-|\upbow r8 |
+	\time 4/8
+	c'-|\upbow r8 c'-|\upbow r8 |
+	\time 5/8
+	c'\f^\markup{"pizz."}[ r8 c' r8 c'] |
+	\time 2/4
+	r8 c'[ r8 c'] |																		\mark \default		% Rehearsal No. 13
+	\time 5/8
+	r8 c'[ r8 c'] r8 |
+	\time 3/8
+	e'[ gis' a'] |
+	\time 2/4
+	cis''[ b' a' b'] |
+	\time 3/4
+	cis'' r8 r4 r8 b'16\sf^\markup{"arco"}( g') |
+	\time 6/8
+	<< e'16-| g' [ >> e'-| << e'8-| g' >> << e'16-| g'\> >> e'16-| << e'8-| g'\!]>> r8 r8 |	\mark \default		% Rehearsal No. 14
+	\time 2/4
+	\grace {s16 s s s s} R2 |
+	\grace {s16 s s s s} R2 |
+	R2 * 2 |
+	\time 3/8
+	R4. |																				\mark \default		% Rehearsal No. 15
+	\time 2/4
+	fis''4---\markup{\dynamic mp "dolce"} fis''4-- |
+	fis''4-- fis''4-- |
+	\time 5/8
+	R1 * 5/8 |
+	\time 2/4
+	b'4\p b'4 |
+	b'4 b'8 b''8 |
+	\time 3/8
+	f''8([\< g'' a''\!)] |																\mark \default		% Rehearsal No. 16
+	\time 4/8
+	<< d'16\subFF-> bes' bes''[>> << d'16-> bes' bes''>> << d'8-> bes' bes'']>> r4 |
+	\time 3/8
+	<<d'8 bes' bes''-|[>> r8 <<d' bes' bes''-|]>> |
+	\time 4/8
+	r8 <<d' bes' bes''-|[>> r8 <<d' bes' bes''-|]>> |
+	\time 5/8
+	r8 <<d' bes' bes''-|[>> r8 <<d' bes' bes''-|]>> r8 |
+	\time 2/4
+	<<d' bes' bes''-|>> <<bes-|-\markup{\dynamic sf "secco"} d'[>> <<bes-| d'>> r8 |
+	<<bes-| d']>> r8 r8 <<bes-| d'[>> |
+	<<bes-| d'>> <<bes-| d']>> r8 <<bes-| d'>> |
+	r4 <<bes8-| d'[>> <<bes-| d'>> |
+	<<bes-| d']>> r8 <<bes-| d'>> r8 |													\mark \default		% Rehearsal No. 17
+	\time 5/8
+	r8 f'16^\markup{\italic{"leggiero"}}-\markup{"accompagnando"}[( a16) f'8-.( f'8-.] r8 |
+	\time 2/4
+	f'8-.)[ f'16( a) f'8-.] r8 |
+	r8 f'16[( a) f'8-.( f'8-.] |
+	r8 f'8-.[) e'16( g16) e'8-.] |
+	\time 3/8
+	<<d'8-|\sff c'' a''[>> r8 <<d'8-| c'' a'']>> |
+	\time 2/4
+	r8 <<d'8-| c'' a''[>> r8 <<d'8-| c'' a'']>> |
+	r8 <<d'8-| c'' a''[>> r8 <<d'8-| c'' a'']>> |										\mark \default		% Rehearsal No. 18
+	\time 3/8
+	r4 <<aes16-.\p_\markup{"(accompagnando)"} d'[>> g16-. |
+	\time 3/4
+	<<aes8-. d']>> r8 <<aes8-. d'>> r8 e'16-.[ g-. e'8-.] |
+	\time 2/4
+	\grace {s8} r8 << aes16-. d'[>> << g16-. d'>> << aes8-. d']>> r8 |
+	e'16-. g16-. e'8-. r4 |
+	r4 r8 << a16-. e'[ >> g-. |
+	<< a8-. e'-.]>> r8 ees'16-. g-. ees'8-. |
+	r4 <<c'16 e'[>> <<c' e'>> <<c'8 e']>> |												\mark \default		% Rehearsal No. 19
+	r8 cis'\f-\markup{"pizz."}[ r d'] |
+	r8 g\p f'4 |
+	\time 3/4
+	R2. * 2 |																			\mark \default		% Rehearsal No. 20
+	\time 5/8
+	<< d'8-|-\tweak #'Y-offset #6 \downbow^\markup{"arco"} bes' bes'' >> r8 <<d'8-|-\tweak #'Y-offset #6 \downbow bes' bes''>> r8 <<d'8-|-\tweak #'Y-offset #6 \downbow bes' bes''>> |
+	\time 2/4
+	r8 <<d'8-|-\tweak #'Y-offset #6 \downbow bes' bes''>> r8 <<d'8-|-\tweak #'Y-offset #6 \downbow bes' bes''>> |
+	r8 <<d'8-|-\tweak #'Y-offset #6 \downbow bes' bes''>> r8 <<d'8-|-\tweak #'Y-offset #6 \downbow bes' bes''>> |
+	r8 <<d'8-|-\tweak #'Y-offset #6 \downbow c'' a''>> r8 <<d'8-|-\tweak #'Y-offset #6 \downbow c'' a''>> |
+	r8 <<d'8-|-\tweak #'Y-offset #6 \downbow c'' a''>> r8 <<d'8-|-\tweak #'Y-offset #6 \downbow c'' a''>> |
+	r8 <<d'8-|-\tweak #'Y-offset #6 \downbow bes' bes''>> r8 <<d'8-|-\tweak #'Y-offset #6 \downbow bes' bes''>> |
+	r8 <<d'8-|-\tweak #'Y-offset #6 \downbow bes' bes''>> r8 <<d'8-|-\tweak #'Y-offset #6 \downbow bes' bes''>> |
+	r8 <<d'8-|-\tweak #'Y-offset #6 \downbow c'' a''>> r8 <<d'8-|-\tweak #'Y-offset #6 \downbow c'' a''>> |
+	\time 5/8
+	r8 <<d'8-|-\tweak #'Y-offset #6 \downbow c'' a''>> r8 <<d'8-|-\tweak #'Y-offset #6 \downbow c'' a''>> r8 |				\mark \default		% Rehearsal No. 1
+	<<d'8-|-\tweak #'Y-offset #6 \downbow bes' bes''>> r8 r4. \bar "|."
 }
